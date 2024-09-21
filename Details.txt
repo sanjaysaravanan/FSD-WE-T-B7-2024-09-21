@@ -1,0 +1,155 @@
+Recap:
+  ways to use CSS
+    inline
+    internal
+    external
+  
+  priority: 
+    inline > internal/external( depending on the order of execution )
+
+  priority overriding: using important keyword
+
+  class vs id:
+    class: .
+    id: #
+  
+  display:
+    inline - takes only the width it needed, width & height does not have an effect in the elements
+
+    inline-block - by default it will take only the needed width & height, incase width & height is provided it takes that
+
+    block - takes the entire width of the parent & does not allow others elements to sit beside
+
+    hover: hover over the element
+    active: 
+
+Topics:
+
+  ::before
+  ::after
+  child selection
+    nth-child, nth-of-type
+
+    inner child selection
+
+    input type selection
+    input checked selection
+  
+  box model:
+    content:
+      innermost of the box model
+      any inner child/children inside a tag
+  
+    padding:
+      comes between the content and border
+      clockwise: top, right, bottom, left
+
+    border:
+      comes between the padding and margin
+
+    margin:
+      outermost layer of boxmodel
+
+    border-box vs content-box
+
+    border-style
+
+  gradient:
+    greadient - mix of colors
+      linear, radial
+
+  Position:
+    The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+
+    Normal Document flow, the postions or the place for a element is decided by the html based the contents( div, span, p, h) inside the document
+
+    if scrolling makes an element move, then it is affected by scrolling
+
+    static/initial:
+      1. Goes with the normal flow of the document
+      2. Occupies its own space in the document
+      3. Not affected by top, right, bottom, left, z-index( floor specific ) values
+      4. Affected by scrolling -> scroll moves the div element
+    
+    Relative:
+      1. Goes with the normal flow of the document
+      2. Occupies its own space in the document and does not allow other elements to sit in its initial place
+      3. Affected by top, right, bottom, left, z-index values with respect to its initial postion inside parent
+      4. Affected by scrolling
+
+    Absolute:
+      1. Removed from the normal flow of the document and made to appear float over normal flow of the document
+      2. No Space is occupied in the page layout
+      3. when **no** top, right ... props are specified itstays in original postion but float above normal flow of the document
+      4. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag) ** if provided none of its parents( immediate/grand/grand-grand ) has non static position value**
+
+          ** When some of its parents has non static position value then it moves with respective to the closest non static positioned parent **
+      5. Affected by scrolling
+
+    Fixed:
+      1. Removed from the normal flow of the document and made to appear float over normal flow of the document
+      2. No Space is occupied in the page layout
+      3. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag)
+      4. Not Affected by scrolling
+
+    Sticky:
+      1. Goes witht the normal flow of the document
+      2. Occupies its own space in the document
+      3. Affected by top, right, bottom, left values with respective to initial 
+          containing block (html tag) only on reaching the threshold
+      4. Affected by scrolling till it reaches it top, left ... values 
+
+    z-index --> position value( floor no ) for floating 
+
+Task:
+  Read more about box-model & position props
+  Go to any Good websites like facbook or google check the inspect tools as discussed in the session
+
+Next Session:
+  measurements / Units:
+    Absolute Unit:
+    px - pixel, pt - point, pc - picas
+    1px = 1/96th of an inch
+
+    1pt = point 1/72th of an inch
+
+    1pc = picas,  12 * 1pt or 1/6th of inch
+
+    Relative Units:
+      %, vh, vw, 
+      1% -> 1 percent of the parent's property value
+
+      vw -> viewport width
+        1vw -> 1 % viewport width
+      vh -> viewport height
+        1vh -> 1 % viewport height
+      
+      emphemeral units (font-size) default font-size ----> 16px
+        em, rem ---> root em
+          1rem = fontsize of the root element ( Initial Containing Block )
+          1em = fontsize of the parent element
+
+          2rem = 2 * fontsize of the root element ( Initial Containing Block )
+          2em = 2 * fontsize of the parent element
+
+
+  css function:
+    url() --> takes a path for the image or someother
+    linear-gradient() --> 
+    calc() --> calculate the property value from arthimetic operation (-, +)
+    eg: width: calc(100px - 30px) ---> 70px
+        parent entire width is 1000px 
+        width: calc(100% - 50px) ---> 950px
+  
+  font-family:
+    different font selection --> https://fonts.google.com/
+
+  icons:
+    font-awesome --> https://cdnjs.com/libraries/font-awesome
+    Use any free icons
+  
+
+Requests from Students:
+  1. Git & Github Session

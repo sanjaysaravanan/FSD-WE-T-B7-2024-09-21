@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form>
+      <label for="accno" class="label-required"
+        >A/C No:<!-- <span class="required">*</span> --></label
+      >
+      <input type="number" name="accno" id="accno" value="12345" required />
+      <br />
+      <br />
+      <label for="password" class="label-required"
+        >Password:<!-- <span class="required">*</span> --></label
+      >
+      <input
+        type="password"
+        name="password"
+        value="1223456"
+        id="password"
+        required
+      />
+      <br />
+      <br />
+      <label for="senior">Is Senior Citizen</label>
+      <input type="checkbox" id="senior" />
+      <br />
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

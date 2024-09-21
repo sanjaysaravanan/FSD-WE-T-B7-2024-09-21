@@ -1,0 +1,20 @@
+.required {
+  color: red;
+}
+
+/* Pseudo Classes */
+/* before */
+.label-required::before {
+  content: "*";
+  color: red;
+  height: 10px;
+  width: 10px;
+  background-color: aqua;
+}
+
+/* after */
+/* .label-required::after {
+  content: "*";
+  color: red;
+}
+ */

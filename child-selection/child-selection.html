@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div:first-child {
+        color: green;
+      }
+
+      div:last-child {
+        background: red;
+      }
+
+      div:nth-child(2) {
+        color: yellow;
+      }
+
+      div:nth-child(4) {
+        color: maroon;
+      } */
+
+      div:nth-of-type(even) {
+        color: red;
+      }
+
+      /* style all the h1 inside any divs */
+      /* div h1 {
+        color: green;
+      } */
+
+      /* style all the h1 child in any divs, not the grand-childs */
+      div > h1 {
+        color: green;
+      }
+
+      /* div:nth-last-child(4) {
+        color: red;
+      } */
+
+      input:checked {
+        transform: scale(1.5);
+      }
+
+      input[type="radio"] {
+        outline: 1px solid green;
+      }
+
+      input[type="checkbox"] {
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Sample 1</div>
+    <div>Sample 2</div>
+    <div>Sample 3</div>
+    <div>Sample 4</div>
+
+    <h1>Main Content</h1>
+    <div>
+      <h1>Side Content</h1>
+      <span><h1>Side Side Content</h1></span>
+    </div>
+    <input type="radio" name="sample" />
+    <input type="radio" name="sample" />
+    <input type="checkbox" name="sample" />
+  </body>
+</html>

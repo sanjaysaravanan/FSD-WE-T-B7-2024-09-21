@@ -1,0 +1,30 @@
+p {
+  color: grey;
+}
+
+h3 {
+  color: green !important;
+}
+
+.div-common {
+  background-color: aqua;
+}
+
+/* id */
+#div-one {
+  background-color: beige;
+}
+
+/* a:hover {
+  color: green;
+}
+ */
+
+/* a:active {
+  color: greenyellow;
+}
+ */
+
+a:visited {
+  color: red;
+}
